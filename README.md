@@ -87,4 +87,3 @@
     ```
 
 
-# STONKS-FRONTEND-ASSIGNMENT

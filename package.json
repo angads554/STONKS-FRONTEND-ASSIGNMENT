@@ -3,11 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tanstack/react-table": "^8.17.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "browser-image-compression": "^2.0.2",
+    "emoji-picker-react": "^4.9.3",
+    "file-saver": "^2.0.5",
+    "fuzzy-search": "^3.2.1",
+    "image-compressor": "^2.0.3",
+    "rc-slider": "^10.6.2",
     "react": "^18.3.1",
+    "react-avatar-edit": "^1.2.0",
+    "react-avatar-editor": "^13.0.2",
     "react-dom": "^18.3.1",
+    "react-easy-crop": "^5.0.7",
+    "react-icons": "^5.2.1",
+    "react-image-crop": "^11.0.5",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -34,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "tailwindcss": "^3.4.3"
   }
 }

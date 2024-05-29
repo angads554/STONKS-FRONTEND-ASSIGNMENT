@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import UserTable from "./components/UserTable";
+import Chat from "./components/Chat";
+import Navbar from "./components/NavBar";
+import Modal from "./components/Modal";
+import ProfilePictureUpload from "./components/ProfilePictureUpload";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <Navbar setShowModal={setShowModal} />
+      <div className="flex-1 ml-64 p-6">
+        <h1 className="text-2xl font-bold mb-6">Stonks Frontend Assignment</h1>
+        <Routes>
+          <Route path="/" element={<UserTable />} />
+          <Route path="/chat" element={<Chat />} />
+        </Routes>
+        <Modal showModal={showModal} setShowModal={setShowModal}>
+          <ProfilePictureUpload />
+        </Modal>
+      </div>
     </div>
   );
 }
